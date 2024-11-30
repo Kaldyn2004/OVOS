@@ -3,7 +3,7 @@ version: '3.8'
 services:
   game1:
     build:
-      context: 2048-games
+      context: .
     ports:
       - "8080:8080"
     container_name: 2048-container-1
@@ -12,7 +12,7 @@ services:
 
   game2:
     build:
-      context: 2048-games
+      context: .
     ports:
       - "8081:8080"
     container_name: 2048-container-2
